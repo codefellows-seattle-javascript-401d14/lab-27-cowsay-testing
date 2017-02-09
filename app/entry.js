@@ -6,19 +6,25 @@ const angular = require('angular');
 const cowsay = require('cowsay-browser');
 
 angular.module('cowsay27App', [])
+.component('navbar', {
+  template:
+  require('./views/partials/navbar.html'),
+})
 .component('cowsay', {
-  template: require('./cowsay.html'),
+  template:
+   require('./views/partials/cowsay.html'),
   controller: ['$log', function($log){
     this.$onInit = function(){
-      this.title = 'cowsay lab-27 app';
+      this.title = 'cow creator.';
+      this.motto = 'make it, view it, and undo it!';
       this.history = [];
       this.current = '';
       this.userInput = '';
       this.getCow = function(text, f){
         $log.log('text was', text, f);
         return cowsay.say({
-          text: text || 'Hello friend.',
-          f: 'stimpy',
+          text: text || 'cowcontrol.io',
+          f: 'bong',
         });
       };
       this.saveCow = function() {

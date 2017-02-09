@@ -1,3 +1,107 @@
 body {
-  background-color: #ffaaff;
+  margin: 0;
+  padding: 0;
+  background-color: #EDEBEB;
+  font-family: 'Fira Sans', sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+nav {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: #666565;
+  color: #9C9A9A;
+}
+.logo {
+  width: 40%;
+  height: 100%;
+  display: inline-flex;
+  align-content: center;
+}
+.logo img {
+  height: 50px;
+  display: inline-block;
+  margin: auto 5px;
+
+}
+.logo h1 {
+  display: inline-block;
+  margin: auto 5px;
+
+}
+.navigation {
+  width: 50%;
+  height: 100%;
+  display: inline-flex;
+  align-content: center;
+}
+.main-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+
+
+}
+.main-nav li {
+  display: inline-block;
+  margin: auto 5px;
+  font-size: 1.25em;
+
+}
+.inactive {
+
+}
+.active {
+  text-decoration: underline;
+}
+.main-header {
+  margin: 20px 10px;
+}
+.main-header h2 {
+  display: inline;
+}
+.main-header p {
+  display: inline;
+}
+.creator {
+  width: 60%;
+  height: 100%;
+  display: inline-flex;
+  align-content: center;
+
+}
+.creator-controls {
+  width: 35%;
+  height: 100%;
+  display: inline-flex;
+  align-content: center;
+
+}
+.creator-controls ul {
+  width: 100%;
+  display: block;
+  align-content: center;
+}
+.creator-controls li {
+  margin: 20px auto;
+}
+.creator-controls select {
+  width: 100%;
+}
+.creator-controls option {
+}
+.creator-controls input {
+  height: 2em;
+  border-radius: 5px;
+  width: 100%;
+}
+.view-it {
+
 }

@@ -2,7 +2,7 @@
   "name": "lab-27-cowsay",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "entry.js",
   "scripts": {
     "build": "./node_modules/webpack/bin/webpack.js",
     "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
