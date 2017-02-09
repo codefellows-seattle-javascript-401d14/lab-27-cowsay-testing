@@ -1,0 +1,14 @@
+<main>
+  <h1> {{ $ctrl.title }} </h1>
+  <h3> {{ $ctrl.tagline }} </h3>
+  <input ng-model="$ctrl.userInput" />
+  <button ng-click="$ctrl.viewCow()">CLICK TO VIEW</button>
+  <button ng-click="$ctrl.undoCow()">UNDO THIS COW!</button>
+  <pre>
+    {{ $ctrl.getCow($ctrl.userInput) }}
+  </pre>
+  <pre>
+    {{ $ctrl.currentCow }}
+  </pre>
+
+</main>
