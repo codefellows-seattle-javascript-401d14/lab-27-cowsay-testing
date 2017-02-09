@@ -14,7 +14,7 @@ KenApp.component('cowsay', {
       this.userInput = '';
       this.name = 'Ken';
       this.getCheese = function(text){
-        return cowsayBrowser.say ({text: text || 'Make Cheeseman say something cool', f:'cheese' });
+        return cowsayBrowser.say ({text: text || 'hi', f:'cheese' });
       };
     };
   }],

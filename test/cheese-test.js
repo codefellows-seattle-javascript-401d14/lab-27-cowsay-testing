@@ -28,13 +28,19 @@ describe('testing cheeseman component controller', function (){
       done();
     });
   });
+
   describe('testing getCheese method',() => {
-    it.only('should return "Make Cheeseman say something cool"', (done) => {
+    it('should return "Make Cheeseman say something cool"', (done) => {
       let result = this.cheeseCtrl.getCheese();
       console.log(result);
-      expect(result).to.equal(cowsayBrowser.say({text: 'Make Cheeseman say something cool'}));
+      expect(result).to.equal(cowsayBrowser.say({text: 'hi', f: 'cheese'}));
       done();
-
+    });
+    it('should return a cheeseMan that says wat up', (done)=> {
+      this.cheeseCtrl.userInput = 'wat up';
+      let result = this.cheeseCtrl.getCheese(this.cheeseCtrl.userInput);
+      expect(result).to.equal(cowsayBrowser.say({text: 'wat up', f:'cheese'}));
+      done();
     });
   });
 
