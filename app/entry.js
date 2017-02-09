@@ -1,6 +1,6 @@
 'use strict';
 
-require('./base.scss');
+require('./css/base.scss');
 
 const angular = require('angular');
 const cowsay = require('cowsay-browser');
