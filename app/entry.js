@@ -3,7 +3,6 @@
 const angular = require ('angular');
 const cowsayBrowser = require('cowsay-browser');
 require('./base.scss');
-console.log('kjdfvkf');
 
 const KenApp = angular.module ('KenApp', []);
 
@@ -14,7 +13,7 @@ KenApp.component('cowsay', {
       this.title = 'The Cheese man App';
       this.userInput = '';
       this.name = 'Ken';
-      this.cowsayBrowser = function(text){
+      this.getCheese = function(text){
         return cowsayBrowser.say ({text: text || 'Make Cheeseman say something cool', f:'cheese' });
       };
     };
