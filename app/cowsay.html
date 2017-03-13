@@ -1,0 +1,20 @@
+<main>
+  <h2>{{$ctrl.title}}</h2>
+  <h3> {{$ctrl.subtitle}}</h3>
+
+  <h3> {{$ctrl.cowfile}}</h3>
+
+  <input type="text" ng-model="$ctrl.userInput">
+
+  <pre>
+    <div class="box">
+      {{$ctrl.getCow($ctrl.userInput)}}
+    </div>
+  </pre>
+
+  <pre>
+    {{$ctrl.currentCow}}
+  </pre>
+  <button type="button" ng-click="$ctrl.saveCow()">Save MOO</button>
+  <button type="button" ng-click="$ctrl.undoCow()"> Undo MOO</button>
+</main>
