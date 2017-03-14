@@ -1,0 +1,29 @@
+<div>
+  <header class="main-header">
+    <h2> {{ $ctrl.title }} </h2>
+    <p>{{ $ctrl.motto }}</p>
+  </header>
+  <div class="creator">
+    <pre >
+      {{ $ctrl.getCow($ctrl.userInput) }}
+    </pre>
+  </div>
+  <div class="creator-controls">
+    <cowsay-options></cowsay-options>
+  </div>
+  <hr></hr>
+  <header class="view-it-header">
+    <h2> {{ $ctrl.titleView }} </h2>
+    <p>{{ $ctrl.mottoView }}</p>
+  </header>
+  <div class="view-it">
+    <pre>
+      {{ $ctrl.current }}
+    </pre>
+  </div>
+    <div class="creator-controls">
+      <ul>
+        <li><button type="button" ng-click="$ctrl.undoCow()">Undo Cowsay</button></li>
+      </ul>
+    </div>
+  </div>
