@@ -9,42 +9,21 @@
     </pre>
   </div>
   <div class="creator-controls">
-    <ul>
-      <li>Select a cowfile.</li>
-      <li><select class="cowfile">
-        <option value="bunny">bunny</option>
-        <option value="cheese">cheese</option>
-        <option value="cower">cower</option>
-        <option value="daemon">daemon</option>
-        <option value="default">default</option>
-        <option value="dragon-and-cow">dragon-and-cow</option>
-        <option value="dragon">dragon</option>
-        <option value="elephant">elephant</option>
-        <option value="eyes">eyes</option>
-        <option value="flaming-sheep">flaming-sheep</option>
-        <option value="ghostbusters">ghostbusters</option>
-        <option value="head-in">head-in</option>
-        <option value="hellokitty">hellokitty</option>
-        <option value="kiss">kiss</option>
-        <option value="luke-koala">luke-koala</option>
-        <option value="mech-and-cow">mech-and-cow</option>
-        <option value="meow">meow</option>
-        <option value="milk">milk</option>
-        <option value="moofasa">moofasa</option>
-        <option value="moose">moose</option>
-        <option value="mutilated">mutilated</option>
-      </select></li>
-      <li>What does it say?</li>
-      <li><input ng-model="$ctrl.userInput"></li>
-      <li>View it!</li>
-      <li><button ng-click="$ctrl.saveCow()">Click to View</button></li>
-    </ul>
-
+    <cowsay-options></cowsay-options>
   </div>
+  <hr></hr>
+  <header class="view-it-header">
+    <h2> {{ $ctrl.titleView }} </h2>
+    <p>{{ $ctrl.mottoView }}</p>
+  </header>
   <div class="view-it">
     <pre>
       {{ $ctrl.current }}
     </pre>
-    <button type="button" ng-click="$ctrl.undoCow()">Undo Cowsay</button>
   </div>
-</div>
+    <div class="creator-controls">
+      <ul>
+        <li><button type="button" ng-click="$ctrl.undoCow()">Undo Cowsay</button></li>
+      </ul>
+    </div>
+  </div>

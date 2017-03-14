@@ -1,7 +1,11 @@
+$lightgrey: #EDEBEB;
+$darkgrey: #666565;
+$grey: #9C9A9A;
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #EDEBEB;
+  background-color: $lightgrey;
   font-family: 'Fira Sans', sans-serif;
 }
 ul {
@@ -40,6 +44,7 @@ nav {
   height: 100%;
   display: inline-flex;
   align-content: center;
+  margin-left: 25%;
 }
 .main-nav {
   width: 100%;
@@ -70,12 +75,25 @@ nav {
 .main-header p {
   display: inline;
 }
+.view-it-header {
+  margin: 20px 10px;
+}
+.view-it-header h2, p {
+  display: inline;
+}
 .creator {
+  width: 60%;
+  height: 100%;
+  margin: auto 10px;
+  display: inline-flex;
+  align-content: center;
+
+}
+.view-it {
   width: 60%;
   height: 100%;
   display: inline-flex;
   align-content: center;
-
 }
 .creator-controls {
   width: 35%;
@@ -84,24 +102,41 @@ nav {
   align-content: center;
 
 }
-.creator-controls ul {
+cowsay-options {
   width: 100%;
   display: block;
   align-content: center;
 }
+.creator-controls ul {
+  width: 80%;
+  display: block;
+  align-content: center;
+
+}
 .creator-controls li {
   margin: 20px auto;
+
 }
 .creator-controls select {
-  width: 100%;
+  width: 80%;
+  height: 2.5em;
+  color: $lightgrey;
+  background-color: $darkgrey;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
 }
-.creator-controls option {
+.creator-controls button {
+  width: 80%;
+  height: 2em;
+  border-radius: 8px;
+  color: $lightgrey;
+  background-color: $darkgrey;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
 }
 .creator-controls input {
-  height: 2em;
-  border-radius: 5px;
-  width: 100%;
-}
-.view-it {
-
+  height: 2.5em;
+  border-radius: 8px;
+  width: 80%;
 }
